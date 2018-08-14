@@ -17,5 +17,16 @@
   -v：显示运行时详细信息  
    
 4 cp 拷贝文件
-    cp a.out bb  拷贝 a.out到bb 文件夹下
+    cp a.out bb  拷贝 a.out到bb 文件夹下 目录需存在
     cp ce.txt  s.txt 把a文件中的内容拷贝到了 b文件中  如果文件不存在，直接创建 ，如果文件存在，会覆盖里面的内容
+
+    cp dira dirb -r  需要递归考入 如果dirb目录不存在 相当于拷贝a目录中的内容，布包扣目录名，反之则把整个目录拷贝到  b 文件夹下
+    
+5 mv 移动文件 和改名
+  
+   mv a.txt  b.txt  把a的名字改成 b 如果文件存在 a 会覆盖 b  且a 不存在了
+   
+   
+   mv b.txt  dir  把文件移动到dir 中
+   
+   mv dir dir1 把dir 目录移动到dir1中

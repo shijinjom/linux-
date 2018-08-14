@@ -1,5 +1,7 @@
 history  查看历史记录
 
+man  ls  查看命令帮助
+
 ctrl+ p  相当于向上 箭头  
 ctrl+ n   相当于向下 箭头
 

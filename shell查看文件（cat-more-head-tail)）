@@ -1,0 +1,32 @@
+1.cat 查看文件
+   cat filename
+   
+   cat  aa/stdio_ext.h |grep include  查找文件当中  include
+   
+   cat >b.txt <<EOF  
+     输入EOF，回车，就可以生成一个 b.txt 文件。其中EOF是告诉 bash 哪个符号代表文件结束。当然你也可以使用自己习惯的符号。
+     
+    cat >>b.txt <<EOF   在末尾添加内容
+    
+    
+2 more 查看文件
+  more -1 一次一行一行的显示
+  more +10  从第10行开始显示
+        Enter 向下n行，需要定义。默认为1行
+        q 退出more
+        Ctrl+F 向下滚动一屏
+        空格键 向下滚动一屏
+        Ctrl+B 返回上一屏
+        = 输出当前行的行号
+        ：f 输出文件名和当前行的行号
+        V 调用vi编辑器
+        
+3 less 查看文件  类似more 比其功能强大  j向下走一行 k回退一行  而more没有此功能
+
+
+4 head 产看文件
+   head filename 默认显示文件前10行
+    head -1 aa/stdio_ext.h  显示文件前 1行
+
+5 tail
+    tail -1 aa/stdio_ext.h 显示文件尾部1行  默认10行

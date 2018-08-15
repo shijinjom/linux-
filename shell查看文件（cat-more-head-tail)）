@@ -27,6 +27,8 @@
 4 head 产看文件
    head filename 默认显示文件前10行
     head -1 aa/stdio_ext.h  显示文件前 1行
+    head -c 30 log.txt 显示文件前n个字节
+    head -c -30 log.txt  文件的除了最后n个字节以外的内容
 
 5 tail
     tail -1 aa/stdio_ext.h 显示文件尾部1行  默认10行
